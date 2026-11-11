@@ -1,4 +1,5 @@
 import { useTheme } from "./hooks/useTheme";
+import type { CSSProperties } from "react";
 import Profile from "./components/features/Profile";
 import ThemeToggle from "./components/features/ThemeToggle";
 import LinkButton from "./components/features/LinkButton";
@@ -19,19 +20,21 @@ interface BackgroundProps {
 
 /*
  * A imagem de fundo é raster e já contém os gradientes do design.
- * O <picture> escolhe a versão desktop ou mobile conforme a largura
- * da viewport, e o object-cover reproduz o comportamento de cover.
+ * O CSS (.background-image) escolhe a versão desktop ou mobile conforme
+ * a largura da viewport e aplica background-size: cover.
  */
 function Background({ desktopSrc, mobileSrc }: BackgroundProps) {
   return (
-    <picture aria-hidden="true">
-      <source media="(max-width: 767px)" srcSet={mobileSrc} />
-      <img
-        src={desktopSrc}
-        alt=""
-        className="pointer-events-none absolute inset-0 size-full object-cover select-none"
-      />
-    </picture>
+    <div
+      aria-hidden="true"
+      className="background-image pointer-events-none absolute inset-0"
+      style={
+        {
+          "--bg-desktop": `url(${desktopSrc})`,
+          "--bg-mobile": `url(${mobileSrc})`,
+        } as CSSProperties
+      }
+    />
   );
 }
 

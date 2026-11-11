@@ -10,3 +10,17 @@
 body {
   font-family: var(--font-sans);
 }
+
+/* Fundo raster por tema/dispositivo, equivalente a background-size: cover */
+.background-image {
+  background-image: var(--bg-desktop);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .background-image {
+    background-image: var(--bg-mobile);
+  }
+}
