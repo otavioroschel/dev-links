@@ -63,7 +63,7 @@ export default function App() {
 
         <SocialLinks links={socialLinks} />
 
-        <footer className="px-6 py-6 text-center text-[14px] leading-6 text-white dark:text-black">
+        <footer className="px-6 py-6 text-center text-[14px] leading-6 text-black dark:text-white">
           Feito com ♥ pela/por Otávio
         </footer>
       </main>

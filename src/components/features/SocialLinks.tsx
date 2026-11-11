@@ -22,7 +22,7 @@ export default function SocialLinks({ links }: SocialLinksProps) {
           rel="noopener noreferrer"
           aria-label={label}
           title={label}
-          className="flex size-10 items-center justify-center rounded-full text-white transition-colors duration-150 hover:bg-black/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:text-black dark:hover:bg-white/20 dark:focus-visible:outline-white"
+          className="flex size-10 items-center justify-center rounded-full text-black transition-colors duration-150 hover:bg-black/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:text-white dark:hover:bg-white/20 dark:focus-visible:outline-white"
         >
           <Icon className="size-6" aria-hidden="true" />
         </a>

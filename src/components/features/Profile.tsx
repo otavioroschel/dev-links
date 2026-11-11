@@ -12,7 +12,7 @@ export default function Profile({ avatarSrc, name }: ProfileProps) {
         className="size-[112px] rounded-full"
       />
       {/* Peso Regular no desktop e Medium no mobile, conforme os frames do Figma */}
-      <p className="font-medium text-[16px] leading-6 text-white md:font-normal dark:text-black">
+      <p className="font-medium text-[16px] leading-6 text-black md:font-normal dark:text-white">
         {name}
       </p>
     </section>
