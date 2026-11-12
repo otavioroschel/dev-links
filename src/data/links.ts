@@ -15,7 +15,7 @@ export interface SocialLinkItem {
 }
 
 export const links: LinkItem[] = [
-  { id: "vrumvrum", title: "VrumVrum Dos Crias", url: "https://vrumvrum.vercel.app/" },
+  { id: "vrumvrum", title: "VRUMVRUM DOS CRIAS", url: "https://vrumvrum.vercel.app/" },
   { id: "chefbo", title: "ChefBô - Projeto Integrador 4", url: "https://www.youtube.com/watch?v=LylmFKG2jUs" },
   { id: "luvita", title: "Luvita Diesel Auto Peças", url: "https://www.luvitadiesel.com.br/" },
   { id: "pokeapi", title: "PokeAPI", url: "https://pokeapi-one-gamma.vercel.app/" },
