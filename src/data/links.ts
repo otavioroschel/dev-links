@@ -14,22 +14,21 @@ export interface SocialLinkItem {
   icon: IconType;
 }
 
-// Substitua os destinos pelos seus endereços pessoais quando necessário.
-// As URLs abaixo foram verificadas e apontam para destinos reais.
 export const links: LinkItem[] = [
-  { id: "curso", title: "Inscreva-se no Curso", url: "https://www.rocketseat.com.br/" },
-  { id: "ebook", title: "Baixe meu e-book", url: "https://www.rocketseat.com.br/blog" },
-  { id: "portfolio", title: "Veja meu portfólio", url: "https://github.com/" },
-  { id: "meu-curso", title: "Conheça meu curso", url: "https://www.rocketseat.com.br/" },
+  { id: "vrumvrum", title: "VrumVrum Dos Crias", url: "https://vrumvrum.vercel.app/" },
+  { id: "chefbo", title: "ChefBô - Projeto Integrador 4", url: "https://www.youtube.com/watch?v=LylmFKG2jUs" },
+  { id: "luvita", title: "Luvita Diesel Auto Peças", url: "https://www.luvitadiesel.com.br/" },
+  { id: "pokeapi", title: "PokeAPI", url: "https://pokeapi-one-gamma.vercel.app/" },
+  { id: "scalene-cover", title: "Scalene - Sonhador (Cover)", url: "https://www.youtube.com/watch?v=gxyDKRJAo5I" },
 ];
 
 export const socialLinks: SocialLinkItem[] = [
-  { id: "github", label: "GitHub", url: "https://github.com/", icon: IoLogoGithub },
-  { id: "instagram", label: "Instagram", url: "https://www.instagram.com/", icon: IoLogoInstagram },
-  { id: "youtube", label: "YouTube", url: "https://www.youtube.com/", icon: IoLogoYoutube },
+  { id: "github", label: "GitHub", url: "https://github.com/otavioroschel", icon: IoLogoGithub },
+  { id: "instagram", label: "Instagram", url: "https://www.instagram.com/otavioroschel.vlrs", icon: IoLogoInstagram },
+  { id: "youtube", label: "YouTube", url: "https://www.youtube.com/otavioroschel", icon: IoLogoYoutube },
   { id: "linkedin", label: "LinkedIn", url: "https://www.linkedin.com/", icon: IoLogoLinkedin },
 ];
 
 export const profile = {
-  name: "@seu.perfil",
+  name: "@otavioroschel",
 };
